@@ -1,0 +1,44 @@
+table{
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+    margin:auto;
+}
+td{
+    border: 1px solid black;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 200px; /* width du cadre entourant img */
+
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+
+#player1{
+    float: left;
+}
+#player2{
+    float: right;
+}
+
+#button{
+    background-color: white;
+    /* Utilisez la font-size de font-size de propriété pour modifier la taille d'un bouton: */
+    font-size: 30px;
+    /* Utilisez le border-radius propriété pour ajouter des coins arrondis à un bouton */
+    border-radius: 20%;
+    border: 2px solid #4CAF50; /* Green */
+}
+/* 
+Utilisez le :hover sélecteur pour changer le style d'un bouton lorsque vous déplacez la souris dessus.
+Astuce: Utilisez la transition-duration propriété pour déterminer la vitesse de l'effet "hover": */
+#button:hover {
+    background-color: aqua; 
+    color: white;
+}
+

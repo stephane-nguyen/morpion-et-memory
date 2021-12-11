@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/morpion_1joueur.css" />
+    <title>morpion_1joueur</title>
+</head>
+
+<body>
+    <!-- design carré désignant joueurs-->
+    <figure id="player1">
+        <img src="images/cartes-morpion/fond2.png" alt="player1_img" />
+        <figcaption id="turn_player1">PLAYER 1</figcaption>
+    </figure>
+ 
+    <table id="array">
+    <!-- Ici, on écrira le contenu du tableau -->
+
+        <!-- CASE 0 1 2 horizontal-->
+        <tr>
+            <td> <!--cells-->
+                <img src="images/cartes-morpion/fond0.png" class="fond_blanc" alt="fond blanc" />
+            </td>
+            <td>
+                <img src="images/cartes-morpion/fond0.png" class="fond_blanc" alt="fond blanc" />
+            </td>
+            <td>
+                <img src="images/cartes-morpion/fond0.png" class="fond_blanc" alt="fond blanc" />
+            </td>
+        </tr>
+
+        <!-- CASE 3 4 5 horizontal-->
+        <tr>
+            <td>
+                <img src="images/cartes-morpion/fond0.png" class="fond_blanc" alt="fond blanc" />
+            </td>
+            <td>
+                <img src="images/cartes-morpion/fond0.png" class="fond_blanc" alt="fond blanc" />
+            </td>
+            <td>
+                <img src="images/cartes-morpion/fond0.png" class="fond_blanc" alt="fond blanc" />
+            </td>
+        </tr>
+
+        <!-- CASE 6 7 8 horizontal-->
+        <tr>
+            <td>
+                <img src="images/cartes-morpion/fond0.png" class="fond_blanc" alt="fond blanc" />
+            </td>
+            <td>
+                <img src="images/cartes-morpion/fond0.png" class="fond_blanc" alt="fond blanc" />
+            </td>
+            <td>
+                <img src="images/cartes-morpion/fond0.png" class="fond_blanc" alt="fond blanc" />
+            </td>
+        </tr>
+    </table>
+
+    <!--reset game button-->
+    <button id="button" onclick="reload_game();"> 
+        <span>Recommencez</span>
+    </button>
+
+    <script src="js/morpion_1joueur.js" defer></script>
+</body>
+</html>
